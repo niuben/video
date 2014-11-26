@@ -26,12 +26,7 @@ controls	  0     	滑动开始触发,会传入event和当前页数
 
 代码示例
 ---------
- **Html**
- <pre>
-&lt;div &gt;
-&lt;/div&gt;
- </pre>
-  
+
 **Javascript**
 <pre>
 	$("div").video({
