@@ -1,0 +1,61 @@
+.smartVideo {			
+	position: relative;
+	overflow: hidden;
+}
+
+.smartVideo img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.smartVideo .play{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: url(play.png) no-repeat center center;
+	background-size: 100px 100px;
+}
+
+.smartVideo  .loading{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(loading.png) no-repeat center center !important;
+    background-size: 100px;
+    -webkit-animation: loading-anim 2s linear infinite !important;
+}
+
+@-webkit-keyframes loading-anim{
+    0%{
+        -webkit-transform:rotate(0)
+    }
+    50%{
+        -webkit-transform:rotate(180deg)
+    }
+    100%{
+        -webkit-transform:rotate(360deg)
+    }
+}
+
+.smartVideo video {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;		  
+}
