@@ -20,7 +20,7 @@ url           ""    	视频地址
 width  		  320 		视频宽度
 height        320    	视频高度
 loop          1       	是否循环播放
-controls	  0     	滑动开始触发,会传入event和当前页数
+controls	  0     	控制条
 </pre>
 
 
